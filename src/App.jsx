@@ -11,7 +11,7 @@ const bundleDropModule = sdk.getBundleDropModule(
 )
 
 const App = () => {
-  const [, setHasClaimedNFT] = useState(false)
+  const [hasClaimedNFT, setHasClaimedNFT] = useState(false)
   const [isClaiming, setIsClaiming] = useState(false)
 
   // Use the connectWallet hook thirdweb gives us.
@@ -80,6 +80,15 @@ const App = () => {
         <button onClick={() => connectWallet('injected')} className='btn-hero'>
           Connect your wallet
         </button>
+      </div>
+    )
+  }
+
+  if (hasClaimedNFT) {
+    return (
+      <div className='member-page'>
+        <h1>🍪DAO Member Page</h1>
+        <p>Congratulations on being a member</p>
       </div>
     )
   }
