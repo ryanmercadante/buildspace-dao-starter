@@ -204,8 +204,11 @@ const App = () => {
   if (hasClaimedNFT) {
     return (
       <div className='member-page'>
-        <h1>🍪DAO Member Page</h1>
-        <p>Congratulations on being a member</p>
+        <h1>🏙 NYC DAO</h1>
+        <p>
+          Welcome to the NYC DAO member page! Together we can vote on proposals
+          to help improve New York City.
+        </p>
         <div>
           <div>
             <h2>Member List</h2>
